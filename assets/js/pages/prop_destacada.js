@@ -1,2 +1,2 @@
-import apiDestCall from "../Propiedades/apiPropDestacada.js";
+import apiDestCall from "../propiedades/apiPropDestacada.js";
 apiDestCall();

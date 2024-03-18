@@ -69,7 +69,7 @@ form.addEventListener('submit', function(e) {
       //Mensaje de Alerta : Error
       let alertElement = document.querySelector('.alert');
       alertElement.textContent = 'Ocurrio un error al enviar correo.';
-      console.log('Error: ', error);
+      // console.log('Error: ', error);
       alertElement.classList.add('alert-danger');
       alertElement.classList.remove('visually-hidden');
       setTimeout(function () {

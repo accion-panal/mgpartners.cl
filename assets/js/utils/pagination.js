@@ -1,5 +1,5 @@
 
-import renderCall from "../Propiedades/render.js";
+import renderCall from "../propiedades/render.js";
 
 let maxPage = 1;
 let currentPage = 1;

@@ -1,5 +1,5 @@
 
-import renderCall from "../Propiedades/render.js";
+import renderCall from "../propiedades/render.js";
 import { limitDataApi } from '../Data/userId.js';
 
 //* borrar el primer limitProp por si queda guardado
