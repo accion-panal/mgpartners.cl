@@ -361,7 +361,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 100px;
+  max-height: 200px;
   margin-right: 6px;
 }
 
@@ -2063,7 +2063,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   inset: 0;
 }

@@ -60,7 +60,7 @@ export const FooterInformation =
     {
         direction:'Asturias, Las Condes',
         phone:'+56 9 66784682 / +56 9 93286079',
-        email:'gquiero@mgpartners.cl / mferrada@mgpartners.clc',
+        email:'contacto@mgpartners.cl',
         horarioSemana:'Lunes a Domingo / 24hrs.',
         horarioFinSemana:'Lunes a Domingo / 24hrs..',
     }
