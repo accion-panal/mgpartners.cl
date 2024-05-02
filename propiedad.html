@@ -37,11 +37,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- MAPBOX CSS -->
-	<link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
-	<script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
-	<!--FIN MAPBOX CSS -->
-
 </head>
 
 <body>
@@ -58,8 +53,6 @@
 <header id="header" class="header d-flex align-items-center" style="margin-top: 45px;">
   <div class="container-fluid container-md menu" >
     <a>
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1></h1>
     </a>
 
@@ -72,7 +65,7 @@
         <!-- <li><a href="services.html">Services</a></li> -->
         <li><a href="propiedad.html" class="active">Propiedades</a></li>
         <li><a href="contacto.html">Contáctanos</a></li>
-        <li><a href="https://accion.panal.house/" target="_blank">Intranet</a></li>
+        <li><a href="/" target="_blank">Intranet</a></li>
 
       </ul>
     </nav><!-- .navbar -->
@@ -103,11 +96,7 @@
           <div class="row">
             <div class="col-sm-12 d-flex justify-content-end">
               <nav>
-                <div class="nav nav-pills navMenu" id="nav-tab" role="tablist">
-                  <!-- <a class="nav-link active" href="propiedad.html" ><i class='bx bx-menu-alt-left fs-3'style="color: rgb(92, 92, 92);"></i></a>
-                  <a class="nav-link " href="propiedad_list.html" ><i class='bx bx-category fs-3' style="color: rgb(92, 92, 92);"></i></a>
-                  <a class="nav-link " href="propiedad_map.html" ><i class='bx bx-map fs-3'style="color: rgb(92, 92, 92);"></i></a> -->
-                  
+                <div class="nav nav-pills navMenu" id="nav-tab" role="tablist"> 
                   <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">              
                     <i class='bx bx-menu-alt-left fs-3'style="color: rgb(92, 92, 92);"></i>
                   </button>
@@ -124,7 +113,7 @@
           <div class="row py-4" style="row-gap: 10px;">
             <div class="col-sm-3">
               <div class="position-relative text-start" id="total-prop">
-                <span>Buscando propiedades...</span>
+                <span>3 Propiedades encontradas</span>
               </div>
             </div>
             <div class="col-sm-6">
@@ -139,8 +128,7 @@
                     <option disabled selected>Seleccione una opción</option>
                     <option value="MenorMayor">Precio de menor a mayor</option>
                     <option value="MayorMenor">Precio de mayor a menor</option>
-                    <!-- <option value="2">Más visto</option>
-                    <option value="3">Mejor evaluado</option> -->
+
                   </select>
                 </div>
               </div>
@@ -157,8 +145,7 @@
                     <option value="3">3</option>
                     <option value="6">6</option>
                     <option value="9">9</option>
-                    <!-- <option value="2">Más visto</option>
-                    <option value="3">Mejor evaluado</option> -->
+
                   </select>
                 </div>
               </div>
@@ -170,7 +157,135 @@
                   <section id="constructions" class="constructions" style="padding:20px !important;">
                     <div class="container" data-aos="fade-up">
                       <div class="row gy-4" id="container-propiedad-list" style="justify-content: center;">
-                        <div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div>
+                        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                          <div class="card-item">
+                            <div class="row">
+                              <div class="col-xl-5" style="height:340px;">
+                                <a class="card-bg" href="/detalle_propiedad.html" target="_blank">
+                                  <img src="./assets/img/hero-carousel/casa2.webp" style="height: 100%; width: 80%; object-fit: cover;"/>
+                                </a>
+                              </div>
+                              <div class="col-xl-7 d-flex align-items-center" style="padding: 2px;">
+                                <div class="post-content text-center">
+                                  <h3 class="post-title mb-4">Casa Familiar</h3>
+                                  <div class="meta d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2"> 
+                                        <i class='bx bx-map fs-4'style="color: rgb(92, 92, 92);"></i>
+                                        Metropolitana, Santiago, Chile</span>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="meta">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 text-center"> 
+                                        Cod. Prop: 231
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="meta d-flex align-items-center mt-5 mb-5">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 precio-card-list"><b>UF 3200</b></span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 precio-card-list"><b>$ 120.000.000</b></span>
+                                    </div>
+                                  </div> 
+                                  <span class="post-date">Casa/ Venta</span>
+                                  <hr>                
+                                  <a href="/detalle_propiedad.html" class="readmore stretched-link" target="_blank"><span>Ver detalle</span><i class="bi bi-arrow-right"></i></a>             
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                          <div class="card-item">
+                            <div class="row">
+                              <div class="col-xl-5" style="height:340px;">
+                                <a class="card-bg" href="/detalle_propiedad.html" target="_blank">
+                                  <img src="./assets/img/hero-carousel/casa7.webp" style="height: 100%; width: 80%; object-fit: cover;"/>
+                                </a>
+                              </div>
+                              <div class="col-xl-7 d-flex align-items-center" style="padding: 2px;">
+                                <div class="post-content text-center">
+                                  <h3 class="post-title mb-4">Casa Familiar</h3>
+                                  <div class="meta d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2"> 
+                                        <i class='bx bx-map fs-4'style="color: rgb(92, 92, 92);"></i>
+                                        Metropolitana, Santiago, Chile</span>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="meta">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 text-center"> 
+                                        Cod. Prop: 231
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="meta d-flex align-items-center mt-5 mb-5">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 precio-card-list"><b>UF 3200</b></span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 precio-card-list"><b>$ 120.000.000</b></span>
+                                    </div>
+                                  </div> 
+                                  <span class="post-date">Casa/ Venta</span>
+                                  <hr>                
+                                  <a href="/detalle_propiedad.html" class="readmore stretched-link" target="_blank"><span>Ver detalle</span><i class="bi bi-arrow-right"></i></a>             
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                          <div class="card-item">
+                            <div class="row">
+                              <div class="col-xl-5" style="height:340px;">
+                                <a class="card-bg" href="/detalle_propiedad.html" target="_blank">
+                                  <img src="./assets/img/hero-carousel/casa5.webp" style="height: 100%; width: 80%; object-fit: cover;"/>
+                                </a>
+                              </div>
+                              <div class="col-xl-7 d-flex align-items-center" style="padding: 2px;">
+                                <div class="post-content text-center">
+                                  <h3 class="post-title mb-4">Casa Familiar</h3>
+                                  <div class="meta d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2"> 
+                                        <i class='bx bx-map fs-4'style="color: rgb(92, 92, 92);"></i>
+                                        Metropolitana, Santiago, Chile</span>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="meta">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 text-center"> 
+                                        Cod. Prop: 231
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="meta d-flex align-items-center mt-5 mb-5">
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 precio-card-list"><b>UF 3200</b></span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                    <div class="d-flex align-items-center">
+                                      <span class="ps-2 precio-card-list"><b>$ 120.000.000</b></span>
+                                    </div>
+                                  </div> 
+                                  <span class="post-date">Casa/ Venta</span>
+                                  <hr>                
+                                  <a href="/detalle_propiedad.html" class="readmore stretched-link" target="_blank"><span>Ver detalle</span><i class="bi bi-arrow-right"></i></a>             
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
                       </div>
                     </div>
@@ -179,14 +294,108 @@
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
               <div class="row gy-4 posts-list" id="container-propiedad" style="justify-content: center;">
-                <div class="spinner-border" role="status" style="margin: 10px 0;"><span class="visually-hidden">Loading...</span></div>
-
+                <div class="col-xl-4 col-md-6">
+                  <div class="post-item position-relative h-100">
+                    <div class="post-img position-relative overflow-hidden" style="height:330px">
+                      <img src="./assets/img/hero-carousel/casa2.webp" style="height: 100%; width: 100%; object-fit: cover;"/>
+                      <span class="post-date">Casa/ Venta</span>
+                    </div>
+                    <div class="post-content d-flex flex-column">
+                      <h3 class="post-title textLimitClass">Casa familiar</h3>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2">Cod. Prop: 231</span>
+                        </div>
+                      </div>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2"> Metropolitana, Santiago, Chile</span>
+                        </div>
+                      </div>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2 precio-card"><b>UF 3200</b></span>
+                        </div>
+                        <span class="px-3 text-black-50">/</span>
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2 precio-card"><b>CLP 120.000.000</b></span>
+                        </div>
+                      </div>
+                      <hr>
+                      <a href="/detalle_propiedad.html" target="_blank" class="readmore stretched-link"><span>Ver detalle</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <div class="post-item position-relative h-100">
+                    <div class="post-img position-relative overflow-hidden" style="height:330px">
+                      <img src="./assets/img/hero-carousel/casa7.webp" style="height: 100%; width: 100%; object-fit: cover;"/>
+                      <span class="post-date">Casa/ Venta</span>
+                    </div>
+                    <div class="post-content d-flex flex-column">
+                      <h3 class="post-title textLimitClass">Casa familiar</h3>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2">Cod. Prop: 231</span>
+                        </div>
+                      </div>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2"> Metropolitana, Santiago, Chile</span>
+                        </div>
+                      </div>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2 precio-card"><b>UF 3200</b></span>
+                        </div>
+                        <span class="px-3 text-black-50">/</span>
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2 precio-card"><b>CLP 120.000.000</b></span>
+                        </div>
+                      </div>
+                      <hr>
+                      <a href="/detalle_propiedad.html" target="_blank" class="readmore stretched-link"><span>Ver detalle</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <div class="post-item position-relative h-100">
+                    <div class="post-img position-relative overflow-hidden" style="height:330px">
+                      <img src="./assets/img/hero-carousel/casa5.webp" style="height: 100%; width: 100%; object-fit: cover;"/>
+                      <span class="post-date">Casa/ Venta</span>
+                    </div>
+                    <div class="post-content d-flex flex-column">
+                      <h3 class="post-title textLimitClass">Casa familiar</h3>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2">Cod. Prop: 231</span>
+                        </div>
+                      </div>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2"> Metropolitana, Santiago, Chile</span>
+                        </div>
+                      </div>
+                      <div class="meta d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2 precio-card"><b>UF 3200</b></span>
+                        </div>
+                        <span class="px-3 text-black-50">/</span>
+                        <div class="d-flex align-items-center">
+                          <span class="ps-2 precio-card"><b>CLP 120.000.000</b></span>
+                        </div>
+                      </div>
+                      <hr>
+                      <a href="/detalle_propiedad.html" target="_blank" class="readmore stretched-link"><span>Ver detalle</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div><!-- End blog posts list -->             
 
             </div>
             <div class="tab-pane fade initialMap active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-              <div class="row gy-4 posts-list" id="div-map-section">
-                <div id="map"></div>
+              <div class="row gy-4 posts-list">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 584px;" allowfullscreen></iframe>
               </div>
               
             </div>
@@ -317,7 +526,7 @@
               <li><a href="nosotros.html"><h4 style="color: #fff;">¿Quiénes somos?</h4></a></li>
               <li><a href="propiedad.html"><h4 style="color: #fff;">Propiedades</h4></a></li>
               <li><a href="contacto.html"><h4 style="color: #fff;">Contáctanos</h4></a></li>
-              <li><a href="https://accion.panal.house/" target="_blank"><h4 style="color: #fff;">Intranet</h4></a></li>
+              <li><a href="/" target="_blank"><h4 style="color: #fff;">Intranet</h4></a></li>
             </ul>
             <div class="row">
               <div class="col-md ">
@@ -332,7 +541,12 @@
               </div>
               <div class="col-md-5 mt-4">
                 <div class="footer-info mt-5" id="redes">
-
+                  <div class="social-links d-flex justify-content-between mt-3">
+                    <a href="#" class="d-flex align-items-center justify-content-center" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  </div> 
                 </div>
               </div>
 
@@ -340,19 +554,9 @@
 
           </div><!-- End footer links column-->
           
-          
         </div>
       </div>
     </div>
-
-    <div class="footer-legal text-center position-relative">
-      <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><a class="" href="https://unne.cl/" target="_blank" rel="noreferrer">UNNE<span></span></a></strong>.Todos los derechos reservados
-        </div>
-      </div>
-    </div>
-
   </footer>
   <!-- End Footer -->
 
@@ -375,21 +579,7 @@
   <!-- Custom -->
   <script src="assets/js/tabs.js"></script>
 
-  <!-- Axios -->
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-  <!-- Pages -->
-  <script type="module" src="assets/js/pages/index.js"></script>
-
-  <!-- Utils -->
-  <script type="module" src="assets/js/utils/filterOnSearch.js"></script>
-  <script type="module" src="assets/js/utils/getSelects.js"></script>
-  <script type="module" src="assets/js/utils/limitProp.js"></script>
   
-
-  <!-- Data -->
-  <script type="module" src="assets/js/Data/FooterInfo.js"></script>
-  <script type="module" src="assets/js/Data/RedesInfo.js"></script>
 
 </body>
 
